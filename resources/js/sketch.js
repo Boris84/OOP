@@ -10,9 +10,9 @@ let speedList = [];
 
 class Bubble {
   constructor() {
-    this.xPos = Math.random() * 5990 + 1;
-    this.yPos = Math.random() * 600  + 1;
-    this.speed = Math.random() * 2 + 1;
+    this.xPos = Math.random() * 8990;
+    this.yPos = Math.random() * 6900  / 1;
+    this.speed = Math.random() * 3 + 1;
     this.r = Math.random() * 255;
     this.g = Math.random() * 255;
     this.b = Math.random() * 255;
@@ -51,7 +51,7 @@ function windowResized() {
  
 function draw() {
   background(255, 0, 255);
-  background("lightgreen");
+  background("white");
   for (var i = 0; i < 100; i++) {
     bubbleList[i].display();
     bubbleList[i].move();
