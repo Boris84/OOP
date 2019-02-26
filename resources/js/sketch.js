@@ -26,7 +26,7 @@ class Bubble {
    move() {
   	 this.yPos += this.speed;
 
-  	 if (this.yPos >= 2000) {
+  	 if (this.yPos >= 1800) {
   	 	this.yPos = 0;
   	 }
    }
