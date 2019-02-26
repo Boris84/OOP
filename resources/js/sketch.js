@@ -40,11 +40,10 @@ class Bubble {
 const bubbleList = [];
   for (let i = 0; i < 100; i++) {
   	bubbleList.push(new Bubble());
-  }
-
+   }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+    createCanvas(windowWidth, windowHeight);
 }
 
 function windowResized() {

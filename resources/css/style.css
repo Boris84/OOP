@@ -5,6 +5,78 @@ html {
 
 
 body {
-	background-color: black;
+  margin: 0;
+  margin-top: -150px;
 }
 
+canvas {
+  display: block;
+}
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* media queries laptop 1125px - 1600px */
+@media only screen and (max-width: 1600px) {
+
+body {
+  margin: 0;
+  margin-top: -150px;
+}
+
+canvas {
+  display: block;
+}
+
+
+}
+
+  /* media queries tablet (landscape) 800px - 1125px */
+@media only screen and (max-width: 1125px) and (orientation: landscape) {
+
+body {
+  margin: 0;
+  margin-top: -150px;
+}
+
+canvas {
+  display: block;
+}
+
+}
+
+
+/* media queries tablet (potrait) 800px - 1125px */
+@media only screen and (max-width: 768px) {#
+
+body {
+  margin: 0;
+  margin-top: -150px;
+}
+
+canvas {
+  display: block;
+}
+
+
+}
+
+/* media queries tablet (potrait) 480px */
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+
+
+body {
+  margin: 0;
+  margin-top: -150px;
+}
+
+canvas {
+  display: block;
+}
+
+}
