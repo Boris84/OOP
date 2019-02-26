@@ -8,8 +8,8 @@ let speedList = [];
 
 class Bubble {
   constructor() {
-    this.xPos = Math.random() * 8990;
-    this.yPos = Math.random() * 6900  / 1;
+    this.xPos = Math.random() * 8000 / 1;
+    this.yPos = Math.random() * 800;
     this.speed = Math.random() * 3 + 1;
     this.r = Math.random() * 255;
     this.g = Math.random() * 255;
@@ -21,13 +21,12 @@ class Bubble {
      fill(this.r, this.g, this.b);
      stroke("black");
      strokeWeight(4);
-
    }
 
    move() {
   	 this.yPos += this.speed;
 
-  	 if (this.yPos >= 660) {
+  	 if (this.yPos >= 800) {
   	 	this.yPos = 0;
   	 }
    }
