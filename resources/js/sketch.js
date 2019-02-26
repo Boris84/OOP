@@ -6,8 +6,6 @@ let speedList = [];
 
 
 
-
-
 class Bubble {
   constructor() {
     this.xPos = Math.random() * 8990;
@@ -19,13 +17,16 @@ class Bubble {
   }
   
    display() {
-     ellipse(this.xPos, this.yPos, 100, 100)
+     ellipse(this.xPos, this.yPos, 50, 50);
      fill(this.r, this.g, this.b);
+     stroke("black");
+     strokeWeight(4);
+
    }
 
    move() {
   	 this.yPos += this.speed;
-  	 
+
   	 if (this.yPos >= 660) {
   	 	this.yPos = 0;
   	 }
@@ -41,6 +42,7 @@ const bubbleList = [];
   	bubbleList.push(new Bubble());
   }
 
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
 }
@@ -50,11 +52,11 @@ function windowResized() {
 }
  
 function draw() {
-  background(255, 0, 255);
-  background("white");
+  background(75, 130, 135);
   for (var i = 0; i < 100; i++) {
     bubbleList[i].display();
     bubbleList[i].move();
+
   }
 }
   
